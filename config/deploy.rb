@@ -1,12 +1,12 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.16.0"
 
-set :application, "achieve"
+set :application, "AWS_EC"
 set :repo_url, "https://github.com/NorahNgatjizeko/AWS_assignment"
 
 set :branch, ENV['BRANCH'] || 'master'
 # The directory to deploy to.
-set :deploy_to, '/var/www/achieve'
+set :deploy_to, '/var/www/AWS_EC'
 # Folders/files with symbolic links
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
